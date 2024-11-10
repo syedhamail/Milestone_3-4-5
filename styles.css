@@ -281,7 +281,7 @@ button:hover {
 
 @media print {
     .print-only {
-        display: block;
+     display: block;   
     }
     body {
         background: none;
@@ -348,12 +348,5 @@ button:hover {
 }
 
 @media (max-width: 768px) {
-    .resume-container {
-        width: 100%;
-    }
     
-    .resume-left,
-    .resume-right {
-        width: 100%;
-    }
 }
