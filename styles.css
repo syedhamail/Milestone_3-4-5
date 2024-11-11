@@ -285,9 +285,7 @@ button:hover {
     body {
         background: none;
         font-size: 10pt;
-        margin: 0;
-        padding: 0;
-        overflow: hidden;
+        
     }
     
     .form-container,
@@ -305,8 +303,13 @@ button:hover {
     }
 
     .resume-header {
+        -webkit-print-color-adjust:exact;
+        print-color-adjust: exact;
+        background-color: #000;
+        color: #fff;
         padding: 15px;
         height: auto;
+        
     }
 
     .resume-header img {
