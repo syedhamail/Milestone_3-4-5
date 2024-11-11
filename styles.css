@@ -275,17 +275,19 @@ button:hover {
     background-color: #ff3333;
 }
 
-.print-only {
-    display: none;
-}
+
 
 @media print {
-    .print-only {
-     display: block;   
+    @page{
+        margin: 0;
     }
+    
     body {
         background: none;
         font-size: 10pt;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
     }
     
     .form-container,
