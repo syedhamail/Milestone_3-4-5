@@ -240,3 +240,50 @@ body{
       box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
     }
   }
+
+
+  /* CSS Code for Small Screens (Below 768px Width) */
+@media (max-width: 768px) {
+  .border {
+    width: 90%; /* Full width with some padding */
+    height: auto;
+    margin: 20px auto; /* Center the div */
+    margin-top: 220px; /* Reduce the top margin */
+  }
+  .border::before {
+    background-image: linear-gradient(to left, red, blue);
+    content: "";
+    position: absolute;
+    z-index: -1;
+    height: 180px;
+    width: 227px;
+    scale: 1.1;
+    filter: blur(25px);
+    animation: rotate 4s linear infinite;
+    border-radius: 100px;
+  }
+
+  .content {
+    width: 100%; /* Make content full-width */
+    height: 100%;
+    padding: px; /* Add some padding */
+  }
+
+  .heading {
+    font-size: 24px; /* Reduce heading font size */
+    padding-top: 30px;
+    padding-right: 0;
+    margin: 0;
+    text-align: center;
+  }
+
+  .btn {
+    position: relative;
+    top: -12px;
+    margin: 20px auto; /* Center the button */
+    margin-top: 20px;
+    width: 8rem; /* Adjust width */
+    height: 2rem; /* Adjust height */
+    font-size: 10px; /* Smaller text size */
+  }
+}
