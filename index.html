@@ -3,10 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Resume Builder By SHMUQ</title>
-    <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <title>Free Resume Builder By SHMUQ</title>
+    <link rel="stylesheet" href="ResumeBuilder.css">
 
 
     <!-- Google tag (gtag.js) -->
@@ -19,100 +17,27 @@
   gtag('config', 'G-G11FJ1MVS4');
 </script>
 
-
 </head>
 <body>
+    
     <div class="container">
-        <div class="form-container">
-            <h1>Dynamic Resume Builder</h1>
-            <form id="resumeForm">
-                <div class="form-section">
-                    <h2>Personal Information</h2>
-                    <div class="profile-upload">
-                        <img id="profilePreview" src="placeholder.jpg" alt="Profile Preview">
-                        <input type="file" id="profilePic" accept="image/*">
-                    </div>
-                    <input type="text" id="fullName" placeholder="Full Name" required>
-                    <input type="text" id="jobTitle" placeholder="Job Title" required>
-                    <input type="tel" id="phone" placeholder="Phone Number" required>
-                    <input type="email" id="email" placeholder="Email" required> 
-                    <input type="text" id="address" placeholder="Address" required>
-                    <textarea id="profile" placeholder="Profile Summary" required></textarea>
+        <div class="border">
+            <div class="content">
+            <h1 class="heading">Do You Want To Create A Free Resume?</h1>
+            <button onclick="window.location.href='index2.html'"
+                type="button" class="btn">
+                <strong>CLICK ME</strong>
+                <div id="container-stars">
+                  <div id="stars"></div>
                 </div>
-
-                <div class="form-section">
-                    <h2>Education</h2>
-                    <div id="educations"></div>
-                    <button type="button" id="addEducation">Add Education</button>
+                <div id="glow">
+                  <div class="circle"></div>
+                  <div class="circle"></div>
                 </div>
-
-                <div class="form-section">
-                    <h2>Work Experience</h2>
-                    <div id="workExperiences"></div>
-                    <button type="button" id="addWorkExperience">Add Work Experience</button>
-                </div>
-               
-                <div class="form-section">
-                    <h2>Skills</h2>
-                    <div id="skills"></div>
-                    <input type="text" id="skillInput" placeholder="Add Skill">
-                    <button type="button" id="addSkill">Add Skill</button>
-                </div>
-
-                <div class="form-section">
-                    <h2>Languages</h2>
-                    <div id="languages"></div>
-                    <input type="text" id="languageInput" placeholder="Add Language">
-                    <button type="button" id="addLanguage">Add Language</button>
-                </div>
-
-                <button type="submit" id="generateResume" class="generateResumeButton">Generate Resume</button>
-            </form>
-        </div>
-
-        <div id="resumeOutput" class="hidden">
-            <div class="resume-container">
-                <div class="resume-header">
-                    <img id="resumeProfilePic" src="" alt="Profile Picture">
-                    <div class="header-text">
-                        <h1 id="resumeName"></h1>
-                        <h2 id="resumeTitle"></h2>
-                    </div>
-                </div>
-                <div class="resume-body">
-                    <div class="resume-left">
-                        <div class="contact-info"></div>
-                        <div class="education-section">
-                            <h2>Education</h2>
-                            <div id="resumeEducation"></div>
-                        </div>
-                        <div class="skills-section">
-                            <h2>Skills</h2>
-                            <ul id="resumeSkills"></ul>
-                        </div>
-                        <div class="language-section">
-                            <h2>Languages</h2>
-                            <ul id="resumeLanguages"></ul>
-                        </div>
-                    </div>
-                    <div class="resume-right">
-                        <div class="profile-section">
-                            <h2>Proffesional Summary</h2>
-                            <p id="resumeProfile"></p>
-                        </div>
-                        <div class="work-experience-section">
-                            <h2>Work Experience</h2>
-                            <div id="resumeWorkExperience"></div>
-                        </div>
-                        
-                    </div>
-                </div>
-            </div>
-            <div class="resume-actions">
-                <button id="printResume">Print Resume</button>
+            </button>           
             </div>
         </div>
     </div>
-    <script src="app.js"></script>
+
 </body>
 </html>
