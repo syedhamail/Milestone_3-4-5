@@ -251,16 +251,7 @@ body{
     margin-top: 220px; /* Reduce the top margin */
   }
   .border::before {
-    background-image: linear-gradient(to left, red, blue);
-    content: "";
-    position: absolute;
-    z-index: -1;
-    height: 180px;
-    width: 227px;
-    scale: 1.1;
-    filter: blur(25px);
-    animation: rotate 4s linear infinite;
-    border-radius: 100px;
+    display: none;
   }
 
   .content {
